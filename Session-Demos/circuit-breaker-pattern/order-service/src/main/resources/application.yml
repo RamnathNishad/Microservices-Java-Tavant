@@ -1,0 +1,33 @@
+resilience4j:
+#  circuitbreaker:
+#    instances:
+#      productServiceBreaker:
+#        registerHealthIndicator: true
+#        permittedNumberOfCallsInHalfOpenState: 2
+#        waitDurationInOpenState: 10s
+  retry:
+    instances:
+      retryServiceBreaker:
+        maxRetryAttempts: 3
+        waitDuration: 10s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#  retry:
+#    instances:
+#      productServiceBreaker:
+#        maxRetryAttempts: 5
+#        waitDuration: 10s
+
